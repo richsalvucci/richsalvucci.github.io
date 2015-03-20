@@ -1,0 +1,189 @@
+body {
+  font-family: 'Open Sans' sans-serif;
+  font-color: #333;
+  background-color: #fff;
+}
+
+img {
+  width: 100%;
+  height: 25%;
+  padding: 0 20px;
+}
+
+li {
+  margin: 0 auto;
+}
+
+ul {
+  padding: 0;
+}
+
+p {
+  width: 100%;
+  font-size: 1.25em;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  padding: 10px;
+}
+
+ .nav ul li {
+  font-size: 1.5em;
+  font-style: italic;
+  font-weight: 700;
+  display: inline-block;
+}
+
+.nav ul {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.contact ul li {
+  padding: 1em;
+  font-size: 1.125em;
+}
+
+#main-content h1 {
+  font-family: 'Arvo', serif;
+  font-style: italic;
+  font-weight: 400;
+}
+
+#work h1 {
+  padding-bottom: 1em;
+}
+
+#contact, 
+#about,
+#work {
+  display:none;
+}
+
+#main-content {
+  background-image: url('img/nice-snow.png'); 
+  padding: 2em;
+  margin: 3em 4em;
+  background-color: #dfdee1;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.headshot {
+  width: 236px;
+  height: 260px;
+}
+
+.nav { 
+  display: block;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  padding: 20px
+}
+
+.examples-container {
+  display: inline-block;
+}
+
+.image.image-full {
+  display: inline-block;
+  width: 32.33%;
+}
+
+.name {
+  font-size: 3em;
+  font-weight: 800;
+}
+
+.job {
+  font-family: 'Arvo', serif;
+  font-style: italic;
+  font-weight: 400;
+  color: #0066FF;
+}
+
+.nav__item--selected {
+  border-bottom: 2px solid #0066FF;
+}
+
+.nav__item {
+  border-bottom: none;
+}
+
+/*Media Queries*/
+
+@media (max-width: 479px) {
+  #contact-link {
+    margin-left: -10px;
+  }
+
+  .nav ul li {
+    display: block;
+  }
+  .contact ul li {
+    display: block;
+  }
+
+  .nav__item--selected {
+    width:17.75%;
+  }
+
+}
+
+@media (max-width: 767px) {
+  .contact ul li {
+    display: block;
+  }
+
+}
+
+@media (min-width: 1024px) {
+  p {
+    width: 66.67%;
+    display: inline-block;
+  }
+
+  #contact p {
+    width: 100%;
+  }
+
+  .contact ul li {
+    display: inline-block;
+  }
+
+  .headshot {
+    margin-bottom: 72px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .examples-container,
+  .image.image-full :nth-child(n+1) {
+    padding-top: 15px;
+    display: block;
+  }
+
+  .image.image-full {
+    width: 100%;
+  }
+
+  .contact ul li {
+    display: block;
+  }
+}
+
+
+
+
+
