@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Grid talk</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+</head>
+<body>
+    <style>
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+            color: #0c0851;
+            background-color: #eee;
+        }
+
+        p {margin-bottom: 1.25em;}
+
+        h1, h2, h3, h4, h5 {
+            margin: 2.75rem 0 1rem;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+            line-height: 1.15;
+        }
+
+        h1 {
+            margin-top: 0;
+            font-size: 3.052em;
+        }
+
+        h2 {
+            font-size: 2.441em;
+        }
+
+        h3 {
+            font-size: 1.953em;
+        }
+
+        h4 {
+            font-size: 1.563em;
+        }
+
+        h5 {
+            font-size: 1.25em;
+        }
+
+        small,
+        .text_small {
+            font-size: 0.8em;
+        }
+
+        .main-content{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: auto;
+            grid-gap: 1rem;
+            justify-items: center;
+        }
+
+        .title,
+        .subtitle,
+        .resource-list {
+            grid-column: span 3;
+        }
+
+        .resource {
+            grid-column: span 1;
+        }
+
+
+    </style>
+    <main class="main-content">
+        <h1 class="title">Rich Salvucci</h1>
+        <h2 class="subtitle">Web Developer</h2>
+        <ul class="resource-list">
+            <li class="resource"><a href="https://css-tricks.com/snippets/css/complete-guide-flexbox/" class="link">CSS Flexbox Guide</a> CSS Tricks</li>
+            <li class="resource"><a href="https://css-tricks.com/snippets/css/complete-guide-grid/" class="link">CSS Grid Guide</a> CSS Tricks</li>
+            <li class="resource"><a href="https://labs.jensimmons.com/" class="link">Expiremental Layout Lab</a> of Jen Simmons</li>
+            <li class="resource"><a href="https://gridbyexample.com/" class="link">Grid by Example</a>by Rachel Andrew</li>
+            <li class="resource"><a href="https://cssgrid.io/" class="link">CSS Grid</a> course by Wes Bos</li>
+            <li class="resource"><a href="https://flexboxfroggy.com/" class="link">Flexbox Froggy</a></li>
+            <li class="resource"><a href="https://cssgridgarden.com/" class="link">CSS Grid Garden</a></li>
+        </ul>
+    </main>
+
+</body>
+</html>
