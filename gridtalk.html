@@ -7,6 +7,7 @@
     <title>CSS Grid talk</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 <body>
     <style>
@@ -53,7 +54,17 @@
             font-size: 0.8em;
         }
 
-        .main-content{
+        a {
+            text-decoration: none;
+            color: #025959;
+        }
+
+        a:hover {
+            color: #008B8B;
+        }
+
+        .main-content,
+        .resource-list {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: auto;
@@ -61,16 +72,36 @@
             justify-items: center;
         }
 
-        .title,
-        .subtitle,
+        .title {
+            grid-column: span 1;
+        }
+
+        .subtitle {
+            grid-column: span 3;
+        }
+
         .resource-list {
             grid-column: span 3;
+            justify-items: start;
+            list-style: none;
         }
 
         .resource {
             grid-column: span 1;
         }
 
+        .contact-wrap {
+            grid-column: span 3;
+            justify-items: start;
+            width: 50%;
+        }
+        .contact {
+            list-style: none;
+            margin-top: 30px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
 
     </style>
     <main class="main-content">
@@ -80,11 +111,18 @@
             <li class="resource"><a href="https://css-tricks.com/snippets/css/complete-guide-flexbox/" class="link">CSS Flexbox Guide</a> CSS Tricks</li>
             <li class="resource"><a href="https://css-tricks.com/snippets/css/complete-guide-grid/" class="link">CSS Grid Guide</a> CSS Tricks</li>
             <li class="resource"><a href="https://labs.jensimmons.com/" class="link">Expiremental Layout Lab</a> of Jen Simmons</li>
-            <li class="resource"><a href="https://gridbyexample.com/" class="link">Grid by Example</a>by Rachel Andrew</li>
+            <li class="resource"><a href="https://gridbyexample.com/" class="link">Grid by Example</a> by Rachel Andrew</li>
             <li class="resource"><a href="https://cssgrid.io/" class="link">CSS Grid</a> course by Wes Bos</li>
             <li class="resource"><a href="https://flexboxfroggy.com/" class="link">Flexbox Froggy</a></li>
             <li class="resource"><a href="https://cssgridgarden.com/" class="link">CSS Grid Garden</a></li>
         </ul>
+        <div class="contact-wrap">
+            <ul class="contact">
+                <li><a href="http://twitter.com/richsalvucci"><i class="fab fa-twitter"></i> @richsalvucci</a></li>
+                <li><a href="http://github.com/richsalvucci"><i class="fab fa-github"></i> Github</a></li>
+                <li><a href="mailto:richsalvucci@mac.com"><i class="fas fa-envelope"></i> Email</a></li>
+            </ul>
+        </div>
     </main>
 
 </body>
